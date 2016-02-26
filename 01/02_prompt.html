@@ -1,14 +1,16 @@
 <html>
 <head>
-  <link href="css/reset.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="../css/reset.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
 </head>
 <body id="nogame" onload="randomization()">
   <div class="container">
     <div class="row">
       <div class="col">
-        <h2>Flappy Bird game</h2>
-        <p>Guide our friend Flappy Bird through the pipes <b>without crashing into them or letting the Flappy Bird fall on the ground</b>.</p>
+        <h2>Design exercise prompt</h2>
+        <p>We suggest you spending 1 hour in ideation, 1 hour in design and 30 minutes preparing
+
+          Guide our friend Flappy Bird through the pipes <b>without crashing into them or letting the Flappy Bird fall on the ground</b>.</p>
       </div>
       <div class="col">
         <h2><span id="h2s">You're joining a gaming group. Members' performances will be compared.</span></h2>
@@ -110,42 +112,5 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-    function randomization() {
-            var randomCondition = -1;
-
-            //1st experiment
-            //randomCondition = ( Math.floor(Math.random() * (8 - 0 +1)) + 0 );
-
-            //2nd experiment
-            randomCondition = ( Math.floor(Math.random() * (5 - 0 +1)) + 0 );
-
-             // simple hack to narrow random assignment
-            //  var pickOne = [4];
-            //  randomCondition = pickOne[Math.floor(Math.random() * pickOne.length)];
-
-            localStorage.setItem('condition',(randomCondition));
-
-            //if (randomCondition == 2 || randomCondition == 5 || randomCondition == 8) {
-            //  document.getElementById("txt").textContent = "players with a similar gaming experience";
-            //} else {
-            //}
-         }
-    </script>
-    <script type="text/javascript">
-      function myFunction() {
-        var radios = document.getElementsByName('inlineRadioOptions');
-        for (var i = 0, length = radios.length; i < length; i++) {
-            if (radios[i].checked) {
-                localStorage.setItem('experience',JSON.stringify(1*radios[i].value));
-                window.location.href = "./";
-                break;
-            } else {
-              document.getElementById("alert").style.opacity = "1";
-              localStorage.setItem('experience','-1');
-            }
-          }
-        }
-    </script>
   </body>
 </html>
