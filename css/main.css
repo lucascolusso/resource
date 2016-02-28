@@ -155,14 +155,19 @@ p{
  padding-bottom: 10px;
 }
 
+p a{
+ font-weight: bold;
+ color: green;
+}
+
 #nogame{
   overflow: auto;
 }
 
 .container{
-  padding:20px;
-  width: 700px;
+  width: 860px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .row{
@@ -171,8 +176,17 @@ p{
 }
 
 .box{
-  background-color: #dadada;
-  border: 1px solid #b5b5b5;
+  background-color: white;
+  border: 2px solid #ececec;
+  padding: 7px;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 4px;
+}
+
+.warning {
+  color: green;
+  font-weight:bold;
 }
 
 .col{
@@ -221,22 +235,31 @@ p{
 }
 
 .bts{
+  text-align: center;
+  font-weight: bold;
   border-radius: 5px;
   display:block;
-  background-color: #ececec;
+  background-color: #107ac0;
   padding: 15px;
-  font-size: 16px;
-  color: black;
+  font-size: 18px;
+  color: white;
   border: 1px;
   text-decoration:none;
-  border: 1px solid gray;
-  border-bottom: 3px solid gray;
-  margin: 0 auto;
+  border: 2px solid #094166;
+  border-bottom: 4px solid #094166;
 }
 
 .bts:hover {
-  background-color: white;
-  border-bottom: 3px solid black;
+  background-color: #3b98d7;
+  border: 2px solid #094166;
+  border-bottom: 4px solid #094166;
+  cursor: pointer;
+}
+
+.bts:active {
+  background-color: #107ac0;
+  border: 2px solid #094166;
+  border-bottom: 2px solid #094166;
   cursor: pointer;
 }
 

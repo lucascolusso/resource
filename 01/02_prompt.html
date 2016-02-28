@@ -1,115 +1,36 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <link href="../css/reset.css" rel="stylesheet">
   <link href="../css/main.css" rel="stylesheet">
 </head>
-<body id="nogame" onload="randomization()">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2>Design exercise prompt</h2>
-        <p>We suggest you spending 1 hour in ideation, 1 hour in design and 30 minutes preparing
 
-          Guide our friend Flappy Bird through the pipes <b>without crashing into them or letting the Flappy Bird fall on the ground</b>.</p>
-      </div>
-      <div class="col">
-        <h2><span id="h2s">You're joining a gaming group. Members' performances will be compared.</span></h2>
-      </div>
-    </div>
-    <div class="row box">
-      <div class="col">
-        <p>
-          <b>1.</b> In the next screen, press "Spacebar" on your keyboard to start the first round.
-        </p>
-        <p>
-          "Spacebar" is also the key you need to press to make Flappy Bird fly higher (i.e., flap wings).
-        </p>
-      </div>
-      <div class="col">
-        <span style="cursor:not-allowed"><img src="assets/presplash.png"></span>
-      </div>
-    </div>
-    <div class="row box">
-      <div class="col">
-        <p>
-          <b>2.</b> After each round, you will see a popup with information about your performance.
-        </p>
-        <p>
-          In the popup, you will also have the option to play a new round or exit the game and continue to the final survey.
-        </p>
-        <p>
-          To play a new round, click the "Play again" button.
-        </p>
-        <p>
-          To exit the game and continue to the final survey, click the "Exit game" button.
-        </p>
-      </div>
-      <div class="col">
-        <p>
-          <b>Button examples</b>
-        </p>
-        <span style="cursor:not-allowed"><img src="assets/bts.png" width="50%"></span>
-      </div>
-    </div>
-    <div class="row">
-      <p>
-        How much experience do you have with online games? You will be compared to <b id="txt">the top player in the group<b>.
+<body id="nogame">
+  <div class="container">
+        <h1>Design exercise prompt.<span class="warning">  Read carefully! :-)</span></h1>
+        <p>We challenge you to create a new feature for <b>Facebook</b>. People might want to post a question, or ask for help in various situations — maybe they want a friend's help to take care of their pets when they are about to travel, or for more serious affairs, for example they discovered someone in their family has a disease, or their car was robbed. The feature you will create intends on maximizing the number of comments or messages connected to posts like this — <b><i>when someone asks for help</i></b>.</p>
+
+        <p>You will have <b>one week</b> to execute the 3 stages below. You can take on them in separate days or in a single-shot, as you wish! We suggest the following schedule, which can and should be adapted to your needs, constraints or design process:</p>
+        <div class="row box">
+          <b>1. Ideation » 1 hour.</b> Generate ideas and sketches for the feature design. These can be both short sentences or drawings. The ideas and sketches can be rough, low-fidelity, however they have to make sense to you, as in the final stage we will ask you to annotate them.
+        </div>
+        <div class="row box">
+          <b>2. Design » 1 hour.</b> Select one of the ideas from the first stage. You will develop the idea as much as you can, aiming at reaching what you consider to be a finalized design. With this design, the intention is having something that can be shown to other designers and communicate your idea to solve the design challenge.
+        </div>
+        <div class="row box">
+          <b>3. Submit » 30 minutes.</b>  Prepare the outcomes of your work to submit us and answer a short survey about the exercise. There are examples of what materials we expect you to submit in the next page, but now focus on the exercise! :-)
+        </div>
+
+        <h2 class="warning">Important!</h2>
+          <p><b>1. Support. </b> You’ll use this resource as a reference for your work: <a href="../resources/card.pdf" target="_blank">Design card</a>. Click on the link to open the file. You can also use any other website or forum you currently use to inform your design process.</p>
+          <p><b>2. Recording. </b> Record your computer screen <b>during stages 1 and 2</b> of the exercise. If you are a Mac user, follow <a href="#">this tutorial on how to use Quicktime Player</a>. If you are a Windows user, follow <a href="#">this tutorial on how to use XXXX</a>.</p>
+          <p><b>3. Submitting materials. </b>
+          When you are done with the exercise, go to the <b>"Submit materials"</b> page by clicking the button below.
       </p>
-      <br />
-        <form id="myForm">
-              <div class="radio">
-                <table>
-                <tr>
-                  <th>
-                    <label class="radio-inline text-center">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
-                      <br/>I never play video games
-                    </label>
-                  </th>
-                  <th>
-                    <label class="radio-inline text-center">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
-                      <br/>
-                      I rarely play video games
-                    </label>
-                  </th>
-                  <th>
-                    <label class="radio-inline text-center">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">
-                      <br/>
-                      I play video games sometimes
-                    </label>
-                  </th>
-                  <th>
-                    <label class="radio-inline text-center">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4">
-                      <br/>
-                      I play video games often
-                    </label>
-                  </th>
-                  <th>
-                    <label class="radio-inline text-center">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5">
-                      <br/>
-                      I play video games all of the time
-                    </label>
-                  </th>
-                </tr>
-                </table>
-              </div>
-            </form>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div id="alert" style="color:red;font-weight:bold;font-size:18px;opacity:0">
-            Please select your level of experience before moving to the game!
-          </div>
-        </div>
-        <div class="col">
-          <button class="bts" id="exitbt" onclick="myFunction()">
-            Send answer and start the game!
-          </button>
-        </div>
+      <a class="bts" id="exitbt">
+        Submit materials
+      </a>
       </div>
     </div>
   </body>
