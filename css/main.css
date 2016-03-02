@@ -165,7 +165,7 @@ p a{
 }
 
 .container{
-  width: 860px;
+  width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -497,6 +497,11 @@ hr
   bottom: 0;
   border: 2px solid black;
   display: list-item;
+}
+
+.list {
+  font-size: 14px;
+  padding-left: 20px;
 }
 
 .identifier
