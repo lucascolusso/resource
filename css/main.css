@@ -140,7 +140,6 @@ h1{
 h2{
   font-size: 21px;
   line-height:32px;
-  color:#fc7858;
 }
 
 #h2s{
@@ -164,6 +163,12 @@ p a{
   overflow: auto;
 }
 
+.survey{
+  overflow:hidden;
+  border:1px solid black;
+  width: 100%
+}
+
 .container{
   width: 900px;
   margin: 0 auto;
@@ -180,7 +185,7 @@ p a{
   border: 2px solid #ececec;
   padding: 7px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
   margin-top: 4px;
 }
 
@@ -475,9 +480,9 @@ Screen - Game
 
 hr
 {
-  border: 2px solid #2ecc71;
-  margin-bottom: 5px;
-  margin-up: 5px;
+  border: 2px solid #ececec;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
 
 #barwrap
@@ -485,9 +490,6 @@ hr
   display: inline-table;
   margin-top: 25px;
   height: 160px;
-
-  /*margin-top: 20px;
-  height: 182px;*/
 }
 
 .bar
