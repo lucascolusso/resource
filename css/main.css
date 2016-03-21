@@ -555,3 +555,9 @@ hr
 #floatright{
   float: right;
 }
+
+.card{
+  width: 10%;
+float: left;
+padding-right: 10px;
+}
