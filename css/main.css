@@ -134,12 +134,30 @@ body
 h1{
   font-size: 24px;
   line-height:32px;
+  margin-bottom: 10px;
 }
 
 h2{
   margin-top: 20px;
   font-size: 21px;
   line-height:32px;
+  margin-bottom: 10px;
+}
+
+.timeskip{
+  padding-top: 10px;
+  font-weight: bold;
+  color: #107ac0;
+}
+
+.imgg{
+  margin-top: 10px;
+  border: 1px solid gray;
+}
+
+.smallp {
+  font-size: 13px;
+  line-height: 21px;
 }
 
 p{
@@ -182,8 +200,9 @@ p a{
 }
 
 .warning {
-  color: green;
-  font-weight:bold;
+  color: #107ac0;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .col{
@@ -266,7 +285,7 @@ p a{
 
 hr
 {
-  border: 2px solid #ececec;
+  border: 2px solid #CECECE;
   margin-bottom: 15px;
   margin-top: 5px;
 }
